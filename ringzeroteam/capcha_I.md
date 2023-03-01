@@ -32,7 +32,7 @@ print(text[:-1])
 link file tesseract.exe: https://github.com/UB-Mannheim/tesseract/wiki
 Rồi bắt tay vào việc thôi
 Mình đã thử nhưng chữ được chữ mất khiến cho phần captcha không hoàn chỉnh
--Sau một hồi tìm tiếm writeup trên mạng cuối cùng cũng thấy 1 đoạn code khả thi
+-Sau một hồi tìm tiếm writeup trên mạng cuối cùng cũng thấy 1 đoạn code khả thi và mình đã tối ưu lại.
 ```
 import requests
 import time
@@ -43,11 +43,11 @@ from requests.auth import HTTPBasicAuth
 
 
 def ch138():
-    s = requests.Session()
-    url = 'http://challenges.ringzer0team.com:10138'
-    for _ in range(1001):
-        time.sleep(0.1)
-        r = s.get('{0}/form1.php'.format(url))
+    s = requests.Session() #tạo 1 phiên http
+    url = 'http://challenges.ringzer0team.com:10138'#đường dẫn
+    for _ in range(1001):#vòng lặp để captcha 1000 lần
+        time.sleep(0.1)#thời gian nghỉ 0.1 giây trước khi thực thiện đoạn code tiếp theo
+        r = s.get('{0}/form1.php'.format(url))#yêu cầu GET đến trang form1.php trên trang web có URL là url.
         m = re.search(r'if \(A == "([a-z0-9]*)"\)', r.text)
         captcha = m.group(1)
         r = s.get('{0}/captcha/captchabroken.php?new'.format(url))
