@@ -1,6 +1,6 @@
 capcha I
--Có vẻ capcha I->IV đều ở trong trang web này, có điều mục tiêu chính hôm nay thì ta sẽ cùng giải quyết bài capcha I.
--Ta cần phải capcha 1000 lần mới có flag. Mỗi lần capcha sai thì phải ghi lại từ đầu thế nên việc viết capcha bằng tay không là điều dường như không thể(trừ khi mấy ông rảnh)
+Có vẻ capcha I->IV đều ở trong trang web này, có điều mục tiêu chính hôm nay thì ta sẽ cùng giải quyết bài capcha I.
+Ta cần phải capcha 1000 lần mới có flag. Mỗi lần capcha sai thì phải ghi lại từ đầu thế nên việc viết capcha bằng tay không là điều dường như không thể(trừ khi mấy ông rảnh)
 ![image](https://user-images.githubusercontent.com/126310360/222168624-ad987a01-2b9a-4796-afc5-6bdb7f34e175.png)
 - Sau một hồi không tìm ra được lỗ hổng trên trang web, mình bắt đầu tìm kiếm trên mạng về cách vượt qua. hmm... Có vẻ phải dùng bot rồi ;V.
 - Một số bài tương tự cũng phải viết code để đọc text từ ảnh -> post capcha.
