@@ -5,7 +5,7 @@ capcha I
 - Sau một hồi không tìm ra được lỗ hổng trên trang web, mình bắt đầu tìm kiếm trên mạng về cách vượt qua. hmm... Có vẻ phải dùng bot rồi ;V.
 - Một số bài tương tự cũng phải viết code để đọc text từ ảnh -> post capcha.
 - Tôi có tìm thấy đoạn code py chuyển lấy text từ img.
-- ```
+```
 - from PIL import Image
 from pytesseract import pytesseract
 
@@ -29,4 +29,5 @@ text = pytesseract.image_to_string(img)
 print(text[:-1])
 
 ```
+link file tesseract.exe: https://github.com/UB-Mannheim/tesseract/wiki
 Rồi bắt tay vào việc thôi
