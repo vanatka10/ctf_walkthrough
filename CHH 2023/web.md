@@ -80,9 +80,9 @@ asyncio.run(main())
 + Đã thực hiện get vào trang web của mình
 ![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/f61766f4-0e69-4551-8981-a7055e0447ea)
 
-Untrusted data sẽ là response ta trả về, khi đó nó được unserialize
+Untrusted data sẽ là response ta trả về, khi đó nó được unserialize  
 ![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/d7d50fe9-c81c-4c3c-90e7-94338d6498a5)
-Thêm vào đó object Utils khi __wakeup sẽ gọi $this->_file
+Thêm vào đó object Utils khi __wakeup sẽ gọi $this->_file  
 ![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/fd5ebec4-0a91-4d57-be85-c6bd1333cbe8)
 Script tạo serialize data:
 ```
@@ -93,7 +93,7 @@ class Utils {
 echo(serialize(new Utils()));
 ?>
 ```
-Thay kết quả của script vào response của webhook
+Thay kết quả của script vào response của webhook   
 ![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/3c8e2fb8-eea4-4e69-8fa1-cc04a4516059)
 
 ![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/241fcbd6-4164-4401-ad53-41fd4d5bbce0)
