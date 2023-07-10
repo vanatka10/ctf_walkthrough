@@ -9,7 +9,7 @@
 **nguồn payload** https://github.com/spaze/hashes  
 => qua được phần login
 
-*Phần sau là 1 chức năng upload file và trong source không có chức năng bảo mật gì nên ta chỉ cần upload file webshell lên và và thực hiện tìm flag thôi
+*Phần sau là 1 chức năng upload file và trong source không có chức năng bảo mật gì nên ta chỉ cần upload file webshell lên và và thực hiện tìm flag thôi  
 ![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/591a9e8a-9cd5-4ea1-8d7f-50ef6e20cbf2)
 
 file upload: webshell.php
