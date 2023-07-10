@@ -31,7 +31,6 @@ file upload: webshell.php
 </body>
 </html>
 ```
-![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/9c946be9-fafe-4b1c-9427-41eeaa19844a)
 
 
 ![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/28f77c09-88d6-4656-b5f5-abfc64c63f1f)
