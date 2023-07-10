@@ -10,6 +10,7 @@
 => qua được phần login
 
 *Phần sau là 1 chức năng upload file và trong source không có chức năng bảo mật gì nên ta chỉ cần upload file webshell lên và và thực hiện tìm flag thôi
+![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/591a9e8a-9cd5-4ea1-8d7f-50ef6e20cbf2)
 
 file upload: webshell.php
 ```
@@ -30,3 +31,6 @@ file upload: webshell.php
 </body>
 </html>
 ```
+![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/9c946be9-fafe-4b1c-9427-41eeaa19844a)
+![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/28f77c09-88d6-4656-b5f5-abfc64c63f1f)
+
