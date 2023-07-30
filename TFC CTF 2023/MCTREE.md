@@ -11,7 +11,9 @@ Mình thử đăng kí bằng admin xem thử và nó hiện về l username đ�
 Xong mình thử regsister bằng 1 vài payload kí tự đặc biệt xem sao và trả về tên tài khoản bị mất 1 số kí tự đặc biệt đi nhưng tên đăng nhập sẽ được giữ nguyên và không báo lỗi . Điều này khá là lạ 
 
 Từ đó mình nghĩ nếu ta thêm kí tự đặc biệt đó để có thể register bằng username admin thì sao tiến hành luôn
+
 ![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/5703d494-60a5-4b7b-b28c-f076227cfa5b)
 
 ngon, giờ chỉ cần đăng nhập vào lấy flag là xong
+
 ![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/40b767aa-c04c-495f-aea4-acc3f51b80b3)
