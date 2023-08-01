@@ -1,9 +1,9 @@
 # solve
 ## LFI
 trong file docker ta thấy cờ được đặt ở thư mục gốc
-![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/8bc6c56d-9bfd-4996-ae1f-daab0be0ebdf)
-khi upload ảnh xong ta sẽ được redirect đến /anonymized/<image_file>
-![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/6e8ae69c-8e01-46d1-99ec-83225c45497b)
+![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/8bc6c56d-9bfd-4996-ae1f-daab0be0ebdf)  
+khi upload ảnh xong ta sẽ được redirect đến /anonymized/<image_file>  
+![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/6e8ae69c-8e01-46d1-99ec-83225c45497b)  
 trong route này dựa vào url ta có thể truy cập được các file ảnh . Nhưng có 1 vấn đề ở đây khi sử dụng os.path.join()
 Theo document của python:
 
