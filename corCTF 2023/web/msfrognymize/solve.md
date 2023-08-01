@@ -8,9 +8,7 @@ trong route này dựa vào url ta có thể truy cập được các file ảnh
 Theo document của python:
 
 [os.path.join()](https://docs.python.org/3/library/os.path.html#os.path.join)
-***
-If a segment is an absolute path (which on Windows requires both a drive and a root), then all previous segments are ignored and joining continues from the absolute path segment.
-***
+***If a segment is an absolute path (which on Windows requires both a drive and a root), then all previous segments are ignored and joining continues from the absolute path segment.***
 Điều này xảy ra vì trên hệ điều hành Windows, dấu \ được sử dụng làm ký tự phân tách thư mục trong đường dẫn tuyệt đối. Do đó, khi bạn thêm một dấu / vào đầu của phần tử cuối cùng, nó sẽ được xem như một đường dẫn tuyệt đối bắt đầu từ gốc thư mục của ổ đĩa hệ thống  
 ví dụ:
 ```
