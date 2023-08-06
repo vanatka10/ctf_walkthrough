@@ -5,4 +5,6 @@ Cũng không có gì ngoài 1 cái ảnh nhưng được gợi ý ở đây là 
 Bài này cũng phải tìm param như bài trước sau đó thực hiện injection  
 Khi thay đổi parameter từ ?name= sang ?name[]= điều đó làm thay đổi parameter từ string sang array điều này gây ra lỗi và thể hiện ra rằng các giá trị của parameter đang được chuyển tới hàm eval()
 Tiếp theo sử dụng các công cụ dirscan để tìm ra cờ là flag.php .Sử dụng kĩ thuật **php wrapper** để lấy bài flag
+final solution  
+```/xchal.php?name=".include($_GET['a']);$name="&a=php://filter/convert.base64-encode/resource=flag.php```
 # Lưu ý sau khi giải những bài sau
