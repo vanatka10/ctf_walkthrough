@@ -1,0 +1,8 @@
+# giới thiệu
+Cũng không có gì ngoài 1 cái ảnh nhưng được gợi ý ở đây là ngay ở phần tên và tên file trên trang web /xchall.php .
+# solution
+ Đây là 1 bài php và có thể là command injection  
+Bài này cũng phải tìm param như bài trước sau đó thực hiện injection  
+Khi thay đổi parameter từ ?name= sang ?name[]= điều đó làm thay đổi parameter từ string sang array điều này gây ra lỗi và thể hiện ra rằng các giá trị của parameter đang được chuyển tới hàm eval()
+Tiếp theo sử dụng các công cụ dirscan để tìm ra cờ là flag.php .Sử dụng kĩ thuật **php wrapper** để lấy bài flag
+# Lưu ý sau khi giải những bài sau
