@@ -15,7 +15,12 @@ Khi thực hiện việc đăng kí cần phải nhập activation code, mà cod
 ![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/98d701cf-1f44-4835-bdfe-fe20ce449e41)
 ![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/81e103f0-b65d-4a29-8aba-621f186ea922)
 
--hàm này sẽ lấy ra tất cả các values của data ngay cả khi ta chèn thêm 1 key:values khác từ đó ta có thể xóa email admin ra khỏi tài khoản khác
+-> Hàm này sẽ lấy ra tất cả các values của data ngay cả khi ta chèn thêm 1 key:values khác từ đó ta có thể xóa email admin ra khỏi tài khoản khác
+(2) Vì nó chỉ kiểm tra bằng len chức không phải kiểm tra bằng giá trị nên ta có thể bypass bằng cách sửa id bằng 1e10 là ta có thể bypass
+
+- Tiếp theo là bypass valid command yêu cầu len là 4 và có lệnh date bên trong ,bằng cách gửi kiểu dữ liệu dạng chuỗi ta có thể bypass nó dễ dàng
+  ![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/0a2c569a-09f6-4166-b9b2-07082fac14cb)
+  
 
 
 
