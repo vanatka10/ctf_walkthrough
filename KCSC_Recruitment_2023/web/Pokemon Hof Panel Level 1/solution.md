@@ -6,9 +6,9 @@
 -Sau khi điền xong thông tin và chọn submit trang web sẽ hiện lên 1 thông báo access denied. Chứng tỏ ta phải leo thang đặc quyền để thành champion
 # Solution
 -Bài này thì ta cũng không cần đọc file nguồn , đầu tiên ta đi check cookie 
-![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/90eaa139-b80a-47b0-9ee1-c3244d0b94be)
+![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/90eaa139-b80a-47b0-9ee1-c3244d0b94be)  
 -Decode base64 ra thì ta có
-![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/7c104105-0699-4a49-a8c4-0941948495b9)
+![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/7c104105-0699-4a49-a8c4-0941948495b9)  
 -Đến bước này thì ta chỉ cần sửa giá trị boolean của isChampion thành 1 rồi encode lại dán vô cookie truy cập lại trang web =>flag
 
 
