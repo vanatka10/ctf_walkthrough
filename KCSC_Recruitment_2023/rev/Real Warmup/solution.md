@@ -1,0 +1,1 @@
+-Mở file bằng ida tìm và decode chuỗi base64 
