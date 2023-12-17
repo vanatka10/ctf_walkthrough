@@ -1,0 +1,1 @@
+-Dùng notepad để mở file,dùng find dựa và format cờ để tìm cờ 
