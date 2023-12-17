@@ -7,7 +7,7 @@
 ![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/874bba9e-d4e4-4c03-b07f-062d70e9e4b0)  
 
 -Sau khi điền xong thông tin và chọn submit trang web sẽ hiện lên 1 thông báo access denied. Chứng tỏ ta phải leo thang đặc quyền để thành champion
-# Solution
+# Exploit
 -Bài này thì ta cũng không cần đọc file nguồn , đầu tiên ta đi check cookie 
 ![image](https://github.com/vanatka10/ctf_walkthrough/assets/126310360/90eaa139-b80a-47b0-9ee1-c3244d0b94be)  
 -Decode base64 ra thì ta có
