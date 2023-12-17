@@ -1,0 +1,1 @@
+-Brute force ngược lại để tìm key
